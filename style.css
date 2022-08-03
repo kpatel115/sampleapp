@@ -1,0 +1,9 @@
+body {
+    background-color:aliceblue;
+}
+
+.form {
+    border:3px solid rgba(43, 43, 43, 0.959);
+    padding:10px;
+    margin:10px;
+}
