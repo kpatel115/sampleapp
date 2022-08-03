@@ -58,25 +58,25 @@
     <div class="form">
       <form method="post" action="http://server1">
         
-        <label>Name</label>
+        <label>Name: </label>
         <input type="text" name="name">
         <br>
-        <label>Email Address</label>
+        <label>Email Address: </label>
         <input type="email" name="email">
         <br>
-        <label>Password</label>
+        <label>Password: </label>
         <input type="password" name="password" required>
         <br>
-        <label>Male</label>
+        <label>Male:</label>
         <input type="radio" name="gender" value="male">
         <br>
-        <label>Female</label>
+        <label>Female: </label>
         <input type="radio" name="gender" value="female">
         <br>
-        <label>Age</label>
+        <label>Age: </label>
         <input type="number" name="age" max="100">
         <br>
-        <label>Your IDE of choice</label>
+        <label>Your IDE of choice: </label>
         <input list="ide">
         <select class="ide">
           <option value="Visual Studio Code">Visual Studio Code</option>
@@ -86,6 +86,8 @@
         </select>
         <br>
         <textarea name="message" maxlength="240" placeholder="Write a message"></textarea>
+        <br>
+        <button type="submit">Submit Form</button>
       </form>
     </div>
 	<!--<script src="index.js"></script> -->
