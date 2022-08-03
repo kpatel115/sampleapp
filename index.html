@@ -8,88 +8,118 @@
     <link rel="stylesheet" href="style.css"> 
   </head>
   <body>
-    <h1>Header 1</h1>
-    <h2>Header 2</h2>
-    <h3>Header 3</h3>
-    <h4>Header 4</h4>
-    <h5>Header 5</h5>
-    <h6>Header 6</h6>
-    <p><em>Lorem</em> ipsum <strong>dolor</strong> sit <span>amet,</span> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <br>
-    <ol>
-      <li>Ordered List Item 1</li>
-      <li>Ordered List Item 2</li>
-      <li>Ordered List Item 3</li>
-    </ol>
-    <ul>
-      <li>Unordered List Item 1</li>
-      <li>Unordered List Item 2</li>
-      <li>Unordered List Item 3</li>
-    </ul>
-    <div class="image">
-      <img src="images/animal.jpg" alt="image of an animal" width="600px">
-      <p>This is a link to <a href="https://www.google.com/" target="_blank">google</a></p>
+    <div class="semantic">
+      <header>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <h5>Header 5</h5>
+        <h6>Header 6</h6>
+      </header>
+      <main>
+        <article>
+          <!-- HTML Elements content -->
+  
+          <p><em>Lorem</em> ipsum <strong>dolor</strong> sit <span>amet,</span> consectetur adipisicing elit, sed do
+            eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia
+            deserunt mollit anim id est laborum.</p>
+          <br>
+          <ol>
+            <li>Ordered List Item 1</li>
+            <li>Ordered List Item 2</li>
+            <li>Ordered List Item 3</li>
+          </ol>
+          <ul>
+            <li>Unordered List Item 1</li>
+            <li>Unordered List Item 2</li>
+            <li>Unordered List Item 3</li>
+          </ul>
+          <aside>
+            <!-- picture of squirrel and link to google-->
+            <div class="image">
+              <figure>
+                <img src="images/animal.jpg" alt="image of an animal" width="600px">
+  
+                <figcaption>
+                  <p>This is a link to <a href="https://www.google.com/" target="_blank">google</a></p>
+                </figcaption>
+              </figure>
+            </div>
+          </aside>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Table Heading 1</th>
+                  <th>Table Heading 2</th>
+                  <th>Table Heading 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Table Data 1</td>
+                  <td>Table Data 2</td>
+                  <td>Table Data 3</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Table head footer</th>
+                  <td colspan="2">Col 1 - 3</td>
+                  <td>Col 2</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <section>
+          <!-- Form Section-->
+          <div class="form">
+            <form method="post" action="http://server1">
+  
+              <label>Name: </label>
+              <input type="text" name="name">
+              <br>
+              <label>Email Address: </label>
+              <input type="email" name="email">
+              <br>
+              <label>Password: </label>
+              <input type="password" name="password" required>
+              <br>
+              <label>Male:</label>
+              <input type="radio" name="gender" value="male">
+              <br>
+              <label>Female: </label>
+              <input type="radio" name="gender" value="female">
+              <br>
+              <label>Age: </label>
+              <input type="number" name="age" max="100">
+              <br>
+              <label>Your IDE of choice: </label>
+              <input list="ide">
+              <select class="ide">
+                <option value="Visual Studio Code">Visual Studio Code</option>
+                <option value="Atom">Atom</option>
+                <option value="Sublime Text">Sublime Text</option>
+                <option value="unlisted"></option>
+              </select>
+              <br>
+              <textarea name="message" maxlength="240" placeholder="Write a message"></textarea>
+              <br>
+              <button type="submit">Submit Form</button>
+            </form>
+          </div>
+        </section>
+      </footer>
     </div>
-    <div class="table">
-      <table>
-        <thead>
-          <tr>
-            <th>Table Heading 1</th>
-            <th>Table Heading 2</th>
-            <th>Table Heading 3</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Table Data 1</td>
-            <td>Table Data 2</td>
-            <td>Table Data 3</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th>Table head footer</th>
-            <td colspan="2">Col 1 - 3</td>
-            <td>Col 2</td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-    <div class="form">
-      <form method="post" action="http://server1">
-        
-        <label>Name: </label>
-        <input type="text" name="name">
-        <br>
-        <label>Email Address: </label>
-        <input type="email" name="email">
-        <br>
-        <label>Password: </label>
-        <input type="password" name="password" required>
-        <br>
-        <label>Male:</label>
-        <input type="radio" name="gender" value="male">
-        <br>
-        <label>Female: </label>
-        <input type="radio" name="gender" value="female">
-        <br>
-        <label>Age: </label>
-        <input type="number" name="age" max="100">
-        <br>
-        <label>Your IDE of choice: </label>
-        <input list="ide">
-        <select class="ide">
-          <option value="Visual Studio Code">Visual Studio Code</option>
-          <option value="Atom">Atom</option>
-          <option value="Sublime Text">Sublime Text</option>
-          <option value="unlisted"></option>
-        </select>
-        <br>
-        <textarea name="message" maxlength="240" placeholder="Write a message"></textarea>
-        <br>
-        <button type="submit">Submit Form</button>
-      </form>
-    </div>
-	<!--<script src="index.js"></script> -->
+    <!--<script src="index.js"></script> -->
   </body>
 </html>
