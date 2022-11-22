@@ -2,7 +2,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+
+    
 }
 nav{
     position:fixed;
@@ -14,6 +16,7 @@ nav{
     opacity: .9;
     z-index: 2;
     
+    
 }
 .nav-box{
     margin: 0px 175px;
@@ -21,6 +24,7 @@ nav{
 #icons{
     font-size: 1.2em;
 }
+
 nav ul{
     display: flex;
     flex-direction: row;
@@ -28,12 +32,13 @@ nav ul{
     align-items: center;
 }
 nav ul li{
-    font-size: 0.8em;
+    font-size: 0.75em;
     line-height: center;
-   list-style: none;
+    list-style: none;
+    letter-spacing: 0.05em;
     cursor: pointer;
-    transition: 0.4s ease-in-out;
 
+    transition: 0.4s ease-in-out;
 }
 nav ul li:hover{
     color: white;
@@ -42,6 +47,9 @@ nav ul li:hover{
     filter: blur(4px); */
     transition: all 0.4s ease-in;
     
+}
+li:first-of-type{
+    font-size: 1.1em;
 }
 
 .slideshow-container {
